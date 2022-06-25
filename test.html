@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="wrapper" id="wrapper">
+
+        <div class="showResult">
+            <div id="result">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet</p>
+
+            </div>
+
+        </div>
+        <div class="blockNenu">
+            <button id="btnEdit" class="btn">Edit</button>
+            <button id="btnStyle" class="btn">Style</button>
+        </div>
+
+        <div class="fixBlock">
+            <div id="insertTextWrapper">
+
+                <textarea rows="10" cols="50" id="textarea"></textarea>
+                <div class="blockNenu">
+                    <button id="btnAdd" class="btn">Add</button>
+                    <button id="btnSave" class="btn">Save</button>
+                </div>
+
+            </div>
+
+            <div id="chooseStyle" class="chooseStyle">
+                <h3>Font size:</h3>
+                <form id="checkboxForm">
+                    <input type="radio" id="12px" name="radio"> <label for="fontSize12px">12px</label>
+                    <input type="radio" id="14px" name="radio"> <label for="fontSize12px">14px</label>
+                    <input type="radio" id="16px" name="radio"> <label for="fontSize12px">16px</label>
+                    <input type="radio" id="18px" name="radio"> <label for="fontSize12px">18px</label>
+                    <input type="radio" id="20px" name="radio"> <label for="fontSize12px">20px</label>
+                </form>
+                <h3>Font family:</h3>
+                <select id="fontSize">
+
+                    <option value="0" selected="true" disabled="disabled">choose option </option>
+                    <option value="cursive">cursive </option>
+                    <option value="fantasy">fantasy </option>
+                    <option value="monospace">monospace </option>
+                    <option value="sans-serif">sans-serif </option>
+
+                </select>
+
+                <div style="margin-top:10px">
+                    <button class="btnGrey" id="btnColor">Color of Text</button>
+                    <button class="btnGrey" id="btnBackground">Background color</button>
+                </div>
+
+                <form style="margin-top:15px" id="fontStyle">
+                    <input type="checkbox" id="boldText" class="radiosquare" name="radio"> <label for="boldText">Bold
+                        text</label>
+                    <input type="checkbox" id="cursiveText" class="radiosquare" name="radio"> <label
+                        for="cursiveText">Cursive text</label>
+                </form>
+
+                <div id="ChoseColorForm">
+                    <div class="colorFormItem" id="red" style="background-color:red;"></div>
+                    <div class="colorFormItem" id="green" style="background-color:rgb(0, 255, 8);"></div>
+                    <div class="colorFormItem" id="yellow" style="background-color:rgb(191, 255, 0);"></div>
+                    <div class="colorFormItem" id="blue" style="background-color:rgb(0, 0, 255);"></div>
+                    <div class="colorFormItem" id="orange" style="background-color:rgb(255, 174, 0);"></div>
+                    <div class="colorFormItem" id="purple" style="background-color:rgb(212, 0, 255);"></div>
+                    <div class="colorFormItem" id="white" style="background-color:rgb(252, 252, 252);"></div>
+                    <div class="colorFormItem" id="yellow" style="background-color:rgb(246, 255, 0);"></div>
+                    <div class="colorFormItem" id="red" style="background-color:rgb(255, 0, 4);"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="wrapperSecondPage" id="wrapperSecondPage">
+        <h1>Choose what you want</h1>
+        <div id="listOrTableCheckBoxes" style="margin-top:15px">
+            <input type="radio" id="table" name="radio"> <label for="table">table</label>
+            <input type="radio" id="list" name="radio"> <label for="list">list</label>
+        </div>
+        <div id="wrapperTable">
+            <form style="margin-top:15px">Count TR: <input type="text" id="countTR"> </form>
+            <form style="margin-top:15px"> Count TD: <input type="text" id="countTD"></form>
+            <h2>Add style to your table</h2>
+            <form style="margin-top:15px">Widh of TD <input type="text" id="widhtOfTD"> </form>
+            <form style="margin-top:15px"> Heigh of TD: <input type="text" id="heightOfTD"></form>
+            <form style="margin-top:15px"> Heigh of border: <input type="text" id="heighOfBorder"></form>
+            <form style="margin-top:15px">
+                Widh of border <input type="text" placeholder="Width:" id="widhOfBorder">
+                Type of border <select id="typeOfBorder">
+
+                    <option value="solid">solid </option>
+                    <option value="dotted"> dotted </option>
+                </select>
+                Color of border <select id="colorOfBorder">
+
+                    <option value="black">black </option>
+                    <option value="red"> red </option>
+                    <option value="green"> green </option>
+                    <option value="gold"> gold </option>
+                </select>
+            </form>
+            <button style="margin-top:15px" id="btnCreateTable">Create table</button>
+
+        </div>
+        <div id="wrapperList">
+            <form style="margin-top:15px">Count Li: <input type="text" id="countLi"> </form>
+            <form style="margin-top:15px"> Type of marks:
+                <select id="typeOfMarks">
+                    <option value="circle">circle </option>
+                    <option value="disc">disc </option>
+                    <option value="square">square </option>
+                </select>
+            </form>
+            <button style="margin-top:15px" id="btnCreatList" class="btn">Create list</button>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

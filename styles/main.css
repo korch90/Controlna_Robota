@@ -1,0 +1,218 @@
+textarea {
+    resize: horizontal, vertical;
+    padding: 30px;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showResult {
+    width: 70%;
+    background-color: rgba(219, 234, 239, 0.924);
+    min-height: 260px;
+    border-radius: 1%;
+    padding: 20px;
+
+
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+}
+
+.fixBlock {
+    min-width: 70%;
+    background-color: rgba(219, 234, 239, 0.924);
+    min-height: 260px;
+    border-radius: 1%;
+    padding: 20px
+}
+
+.blockNenu {
+    padding: 7px;
+}
+
+#insertTextWrapper {
+    flex-direction: column;
+    display: none;
+}
+
+.chooseStyle {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+#fontSize {
+    width: 200px;
+}
+
+#ChoseColorForm {
+    background-color: azure;
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-top: 30px;
+    margin-left: 40%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.colorFormItem {
+    width: 70px;
+    height: 70px;
+}
+
+.wrapperSecondPage {
+    width: 700px;
+    height: 550px;
+    background-color: rgba(219, 234, 239, 0.924);
+    border-radius: 1%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#countTR {
+    width: 80%;
+}
+
+#countTD {
+    width: 80%;
+}
+
+#wrapperTable {
+    display: flex;
+    display: none;
+    flex-direction: column;
+}
+
+#wrapperList {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+/* /////buttonsStyle */
+.btn {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.btnGrey {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 7px;
+}
+
+.btnGrey:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#btnEdit {
+    background-color: yellow;
+}
+
+#btnEdit:active {
+    transform: scale(1);
+    background-color: rgb(241, 241, 11);
+}
+
+#btnStyle {
+    background-color: rgb(0, 157, 255);
+}
+
+#btnStyle:active {
+    transform: scale(1);
+    background-color: rgb(12, 146, 230);
+}
+
+#btnAdd {
+    background-color: rgb(227, 59, 12);
+}
+
+#btnAdd:active {
+    transform: scale(1);
+    background-color: rgb(242, 64, 4);
+}
+
+#btnSave {
+    background-color: rgb(37, 230, 12);
+}
+
+#btnSave:active {
+    transform: scale(1);
+    background-color: rgb(105, 211, 23);
+}
+
+#btnColor {
+    background-color: gray
+}
+
+#btnBackground {
+    background-color: gray
+}
+
+#btnColor:active {
+    background-color: rgb(171, 169, 169)
+}
+
+#btnBackground:active {
+    background-color: rgb(171, 169, 169)
+}
+
+#btnCreateTable {
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btnCreateTable:hover {
+    transform: scale(1.2);
+    background-color: rgb(11, 125, 79);
+}
+
+#btnCreateTable:active {
+
+    background-color: rgb(42, 95, 74);
+    color: rgb(196, 187, 18);
+}
+
+#btnCreatList {
+    background-color: rgb(14, 190, 29);
+    width: 90px;
+    color: white;
+}
+
+#btnCreatList:hover {
+    background-color: rgb(44, 241, 60)
+}
+
+#btnCreatList:active {
+    transform: scale(1);
+    background-color: rgb(17, 152, 98);
+}
+
+/* ------------------ */
