@@ -41,7 +41,6 @@ btnColor.addEventListener("click",showColor)
 btnBackground.addEventListener("click",showBgColor)
 list.addEventListener('change', showList)
 table.addEventListener('change', showTable)
-typeOfMarks.addEventListener("change",countLiRes )
 btnCreateTable.addEventListener("click",CreateTable)
 btnEdit.addEventListener("click",showInsertTextWrapper)
 btnSave.addEventListener("click",textPush)
@@ -50,7 +49,7 @@ chooseStyle.addEventListener("change", makeTextStyle)
 ChoseColorForm.addEventListener("click", pushColor)
 btnCreatList.addEventListener("click",pushList)
 
-
+//create a table
 function CreateTable(){
     let arrTR=[]
     let arrTD=[]
@@ -81,14 +80,13 @@ let arrTRRes=[]
     res.innerHTML+=`<table>${arrTRRes}</table>`
 }
 
-
+//send the text to the text-area
 function textPush(){
     res.innerHTML=textarea.value
     insertWrapper.style.display="none" ;
 }
-function textStyle(){
-    chooseStyle.style.display="flex"
-}
+
+//introduce styles for text
 function makeTextStyle(){
 for (el of checkboxForm ){
    if(el.checked){
@@ -99,7 +97,6 @@ for (el of fontStyle){
     if(el.checked){
         if(el.id=="cursiveText"){
             res.style=`font-family:cursive`
-            console.log(4)
         }
         if(el.id=='boldText'){
             res.style=`font-weight:bold`
@@ -107,15 +104,17 @@ for (el of fontStyle){
     }
 }
 }
+//display a window with colors
 function showColor(){
     ChoseColorForm.style.display="flex"
     flagToKnewWichButtonPushInColorTable=false
 }
+//display a window with colors for background
 function showBgColor(){
     ChoseColorForm.style.display="flex"
     flagToKnewWichButtonPushInColorTable=true
-    
 }
+//apply color
 function pushColor(event){
    if( flagToKnewWichButtonPushInColorTable==true){
     res.style.backgroundColor=event.target.id
@@ -133,11 +132,20 @@ function showTable(){
     wrapperTable.style.display="flex"
     listOrTableCheckBoxes.style.display="none"
 }
-
-function countLiRes(){
-    typeOfMarcsValue=typeOfMarks.value
+function showInsertTextWrapper(){
+    insertWrapper.style.display="flex";
+    text.innerHTML=res.innerHTML
 }
 
+function AddListOrTable(){
+    wrapperSecondPage.style.display="flex"  
+    wrapper.style.display="none"  
+    listOrTableCheckBoxes.style.display="flex"
+}
+function textStyle(){
+    chooseStyle.style.display="flex"
+}
+//display a list
 function pushList(){
     let arrLi=[]
     countLiResult= countLi.value
@@ -151,15 +159,5 @@ function pushList(){
     listOrTableCheckBoxes.style.display="none"
     chooseStyle.style.display="none"
     wrapperSecondPage.style.display="none"
-    res.innerHTML+=`<ol style='list-style-type:${typeOfMarcsValue}' > ${arrLiFinal}   </ol>`
-}
-function showInsertTextWrapper(){
-    insertWrapper.style.display="flex";
-    text.innerHTML=res.innerHTML
-}
-
-function AddListOrTable(){
-    wrapperSecondPage.style.display="flex"  
-    wrapper.style.display="none"  
-    listOrTableCheckBoxes.style.display="flex"
+    res.innerHTML+=`<ol style='list-style-type:${typeOfMarks.value}' > ${arrLiFinal}   </ol>`
 }
