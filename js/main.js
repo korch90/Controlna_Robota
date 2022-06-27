@@ -161,3 +161,4 @@ function pushList(){
     wrapperSecondPage.style.display="none"
     res.innerHTML+=`<ol style='list-style-type:${typeOfMarks.value}' > ${arrLiFinal}   </ol>`
 }
+
